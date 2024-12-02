@@ -41,6 +41,14 @@ h4{
     color: var(--ElectricBlue);
     margin: 0;
 }
+
+h5{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--NightBlack);
+    margin: 0;
+}
+
 p{
     margin: 0;
 }
@@ -56,6 +64,9 @@ button{
     font-size: 1rem;
 }
 
+hr{
+    border-top: 4px dotted var(--SpanishOrange);
+}
 
 ul{
     text-decoration: none;
@@ -85,32 +96,61 @@ aside{
 
 .project_card{
     height: auto;
-    display: flex;
-    flex-direction: column;
     box-shadow: 0px 4px 10px #0f0f0f;
     padding: var(--PaddingMobile);
-    border-radius: 2%;
+    border-radius: 10px;
     margin: 30px var(--PaddingMobile);
 }
 
-.project_img{
+.image_filters{
     width: 100%;
     height: 192px;
     object-fit: cover;
     margin-bottom: 10px;
     box-shadow: inset 0px 4px 50px 20px rgba(15, 15, 15, 0.4);
+    border-radius: 5px;
 }
 
-.project_img img{
+.image_filters img{
     width: 100%;
     height: 100%;
     border: 1px solid var(--SpanishOrange);
     z-index: -2;
     position: relative;
+    border-radius: 5px;
 }
 
 .project_card p{
     margin: 10px 0px;
+}
+
+#intro{
+    padding: 0px var(--PaddingMobile);
+}
+
+.guide_card{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    width: 90%;
+    margin: 30px var(--PaddingMobile);
+}
+
+.guide_card img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px #0f0f0f;
+}
+
+.guide_card h3{
+    padding-top: var(--PaddingMobile);
+}
+
+.course_card{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px var(--PaddingMobile);
 }
 
 
@@ -120,6 +160,7 @@ background-color: var(--NightBlack);
 padding: var(--PaddingMobile);
 height: auto;
 color: var(--AlabasterWhite);
+margin-top: var(--PaddingMobile);
 }
 
 
@@ -136,8 +177,9 @@ footer p{
 
 .socials{
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
 .socials img{
-    width: 15%;
+    width: 10%;
 }
