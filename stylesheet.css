@@ -157,7 +157,7 @@ Sætter du class="image-filter" på kassen, vil alle billeder heri have følgend
     flex-wrap: wrap;
 }
 
-#printing_courses{
+.courses{
     padding: var(--Distance);
 }
 
