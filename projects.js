@@ -17,7 +17,7 @@ const projectData = [
         subtitle: "Sygeplejerske | 3D-print",
         paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer"]
     },
-] 
+]
 
 function addProjectCard(root, data) {
     let projectCardDiv = document.createElement("div");
