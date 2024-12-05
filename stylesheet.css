@@ -49,9 +49,10 @@
         margin: 0;
     }
     
-    /* p{
+    p{
         margin: 0;
-    } */
+        font-size: 0.875rem;
+    }
     
     button{
         border-radius: 5%;
