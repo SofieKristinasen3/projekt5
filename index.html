@@ -8,80 +8,96 @@
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
-    <div>
-      <header>
-        <nav>
-          <div>
-            <img
-              src="img/logo/UCL_horisontal_logo_rbg.png"
-              alt="UCL, Erhvervsakademi og professionshøjskole"
-              class="logo"
-            />
-          </div>
-          <ul id="upper_menu">
-            <li>For studerende / mitUCL</li>
-            <li>Bibliotek</li>
-            <li>Om UCL</li>
-            <li>Nyheder / Presse</li>
-            <li>Kontakt</li>
-            <li>International Site</li>
-            <li><button>Søg</button></li>
-          </ul>
-          <ul id="lower_menu">
-            <li>Værksteder</li>
-            <li>Efteruddannelse og kurser</li>
-            <li>Samarbejde</li>
-            <li>Forskning</li>
-            <li>CFU</li>
-          </ul>
-          <h1><i>Fablab</i></h1>
-        </nav>
-      </header>
-      <aside id="sorting_box">
-        <div id="sorting_content">
-          <div>
-            <h2><i>Sorter efter:</i></h2>
-        </div>
-        <div>
-            <h3>Uddannelse</h3>
-            <!-- Dropdown for uddannelse, bliver fyldt dynamisk -->
-            <select id="education"></select>
-        </div>
-        <div>
-            <h3>Maskine</h3>
-            <!-- Dropdown for maskine, bliver fyldt dynamisk -->
-            <select id="machine"></select>
-        </div>
-    </div>
-      </aside>
+    <div id="container">
+      <div id="content-wrap">
+        <header>
+          <nav>
+            <div>
+              <img
+                src="img/logo/UCL_horisontal_logo_rbg.png"
+                alt="UCL, Erhvervsakademi og professionshøjskole"
+                class="logo"
+              />
+            </div>
+            <ul id="upper_menu">
+              <li>For studerende / mitUCL</li>
+              <li>Bibliotek</li>
+              <li>Om UCL</li>
+              <li>Nyheder / Presse</li>
+              <li>Kontakt</li>
+              <li>International Site</li>
+              <li><button>Søg</button></li>
+            </ul>
+            <ul id="lower_menu">
+              <li>Værksteder</li>
+              <li>Efteruddannelse og kurser</li>
+              <li>Samarbejde</li>
+              <li>Forskning</li>
+              <li>CFU</li>
+            </ul>
 
-      <main>
-        <div id="projects"></div>
-      </main>
+            <h1><i>Fablab</i></h1>
+          </nav>
+        </header>
+        <aside id="sorting_box">
+          <div id="sorting_content">
+            <div>
+              <h2><i>Sorter efter:</i></h2>
+            </div>
+            <div>
+              <h3>Uddannelse</h3>
+              <!-- Dropdown for uddannelse, bliver fyldt dynamisk -->
+              <select id="education"></select>
+            </div>
+            <div>
+              <h3>Maskine</h3>
+              <!-- Dropdown for maskine, bliver fyldt dynamisk -->
+              <select id="machine"></select>
+            </div>
+          </div>
+        </aside>
+
+        <div class="vertical"></div>
+
+        <main>
+          <div id="projects"></div>
+        </main>
+      </div>
+      <footer>
+        <div>
+          <img
+            src="img/logo/UCL_vertical_logo_white_rbg.png"
+            alt="UCL, Erhvervsakademi og professionshøjskole"
+          />
+        </div>
+        <div class="footer_text">
+          <div>
+            <p>Pressekontakt</p>
+            <p>Ledige stillinger</p>
+            <p>Persondata og cookies</p>
+            <p>Tilgænglighedsærklæring</p>
+          </div>
+          <div>
+            <p>Videregående uddannelser</p>
+            <p>Efteruddannelser</p>
+            <p>Kurser</p>
+            <p>mitUCL</p>
+          </div>
+        </div>
+
+        <div class="socials">
+          <img src="img/icons/facebook.svg" alt="Link til UCL's facebookside" />
+          <img
+            src="img/icons/instagram.svg"
+            alt="Link til UCL's instagramside"
+          />
+          <img
+            src="img/icons/linkedin.svg"
+            alt="Link til UCL's Linked-in side"
+          />
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div>
-        <img
-          src="img/logo/UCL_vertical_logo_white_rbg.png"
-          alt="UCL, Erhvervsakademi og professionshøjskole"
-        />
-      </div>
-      <div class="footer_text">
-        <p>Pressekontakt</p>
-        <p>Ledige stillinger</p>
-        <p>Persondata og cookies</p>
-        <p>Tilgænglighedsærklæring</p>
-        <p>Videregående uddannelser</p>
-        <p>Efteruddannelser</p>
-        <p>Kurser</p>
-        <p>mitUCL</p>
-      </div>
-      <div class="socials">
-        <img src="img/icons/facebook.svg" alt="Link til UCL's facebookside" />
-        <img src="img/icons/instagram.svg" alt="Link til UCL's instagramside" />
-        <img src="img/icons/linkedin.svg" alt="Link til UCL's Linked-in side" />
-      </div>
-    </footer>
     <script src="cards.js"></script>
   </body>
 </html>

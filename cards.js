@@ -21,6 +21,48 @@ const projectData = [
         paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer"],
         tags: {education:"Bygningskonstuktør", machine:"Laserskærer"}
     },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
+    {
+        image: "img/gronburger skitse.jpg",
+        title: "3D-printet hjerte",
+        subtitle: "Sygeplejerske | 3D-print",
+        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        tags: {education:"Sygeplejerske", machine:"3D-print"}
+    },
 ]
 
 function addProjectCard(root, data) {

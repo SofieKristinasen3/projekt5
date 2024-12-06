@@ -6,13 +6,23 @@
     --Distance: 5%;
     }
     
-    body{
-        box-sizing: border-box;
+    *{box-sizing: border-box;}
+
+    html, body {
+        height: 100%;
         margin: 0;
         padding: 0;
-        background-color: var(--AlabasterWhite);
         font-family: proxima nova, sans-serif;
     }
+
+    #container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #content-wrap {
+        padding-bottom: auto;
+      }
     
     h1{
         color: var(--NightBlack);
@@ -97,6 +107,8 @@
     }
     
     .project_card{
+        display: block;
+        width: auto;
         height: auto;
         box-shadow: 0px 4px 10px var(--NightBlack);
         padding: var(--Distance);
@@ -140,7 +152,6 @@
         width: 90%;
         height: auto;
         object-fit: cover;
-        width: 90%;
         margin: 30px var(--Distance);
     }
     
@@ -167,11 +178,12 @@
     }
     
     footer{
-    background-color: var(--NightBlack);    
-    padding: var(--Distance);
-    height: auto;
-    color: var(--AlabasterWhite);
-    margin-top: var(--Distance);
+        background-color: var(--NightBlack);
+        padding: var(--Distance);
+        color: var(--AlabasterWhite);
+        width: 100%;
+        height: auto;
+        margin: auto;
     }
     
     
@@ -194,4 +206,99 @@
     .socials img{
         width: 10%;
     }
-    
+
+    .vertical{
+        display: none;
+    }
+
+    .footer_computer{
+        display: none;
+    }
+
+    /* Hjemmesiden gøres responsiv, ift. skærme der er bredere end 768px*/
+    @media only screen and (min-width: 768px){
+         aside{
+            width: 20%;
+            position: relative;
+            left: var(--Distance);
+            margin: 0;
+        }
+        
+        .project_card{
+            width: 25%;
+            padding: 10px;
+            margin: 0;
+        }
+        .project_card:nth-child(n+4){
+            margin-top: var(--Distance);
+        }
+
+        #projects{
+            display: flex;
+            flex-wrap: wrap;
+            width: 65%;
+            position: absolute;
+            right: 0px;
+            justify-content: space-between;
+            column-gap: 30px;
+            margin-right: var(--Distance);
+            
+        }
+        
+        .vertical {
+            display: block;
+            border-left: 4px dotted var(--SpanishOrange);
+            height: 250vh;
+            position:absolute;
+            left: 27.5%;
+          }
+
+          footer img{
+            width: 10%;
+          }
+
+          footer p{
+            padding: 10px;
+          }
+          
+          .socials{
+            justify-content: flex-end;
+          }
+
+          .socials img{
+            width: 5%;
+        }
+
+        .footer_text{
+            display: flex;
+
+        }
+
+        footer{
+            display: none;
+        }
+
+        #guide{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0px var(--Distance);
+            gap: var(--Distance);
+        }
+
+        .guide_card{
+            width: 25%;
+            margin: var(--Distance) 0;
+        }
+
+        .guide_line{
+            display: none;
+        }
+
+        #all_courses{
+            width: 100%;
+            display: flex;
+            gap: var(--Distance);
+            flex-wrap: wrap;
+        }
+    }
