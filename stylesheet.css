@@ -13,7 +13,7 @@
         margin: 0;
         padding: 0;
         font-family: proxima nova, sans-serif;
-        background-image: url(img/background4.svg);
+        background-image: url(img/backgroud_phone.svg);
         background-color: var(--AlabasterWhite);
         background-repeat: no-repeat;
         background-size: cover;
@@ -47,7 +47,7 @@
         font-weight: 600;
         font-size: 1.25rem;
         color: var(--NightBlack); 
-        margin: 0;   
+        margin: 0;  
     }
     
     h4{
@@ -67,6 +67,7 @@
     p{
         margin: 0;
         font-size: 0.875rem;
+        
     }
     
     button{
@@ -79,6 +80,11 @@
         font-weight: 600;
         font-size: 1rem;
     }
+
+    button:hover{
+        background-color: var(--NightBlack);
+        color: var(--SpanishOrange);
+    }
     
     /* Prikket vandrette streg */
     hr{
@@ -90,10 +96,16 @@
         display: none;
     }
      /*navigation*/
+
+    .nav_buttons{
+        display: flex;
+        justify-content: space-between;
+        padding: var(--Distance);
+    }
+
     nav img{
     max-width: 30%;
     height: auto;
-    padding: var(--Distance);
     }
     
     nav ul{
@@ -118,6 +130,10 @@
         color:var(--AlabasterWhite);
     }
 
+    nav a:hover{
+        color: var(--SpanishOrange);
+    }
+
     
     .sidebar{
         position: fixed;
@@ -131,6 +147,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        padding: var(--Distance);
     }
     
     .sidebar li{
@@ -177,6 +194,7 @@
         padding: var(--Distance);
         border-radius: 10px;
         margin: 30px var(--Distance);
+        background-color: var(--AlabasterWhite);
     }
     
     /* .image_filters og .image_filters img hænger automatisk sammen, i det den ene styler "kassen", og den anden direkte på billedet. 
@@ -194,9 +212,9 @@
         width: 100%;
         height: 100%;
         border: 1px solid var(--SpanishOrange);
-        z-index: -2;
         position: relative;
         border-radius: 5px;
+        object-fit: cover;
     }
     
     .project_card p{
@@ -206,9 +224,11 @@
     .project_paragraph{
         color: #0f0f0f;
     }
+
     
     .intro{
         padding: 0px var(--Distance);
+        background-color:rgba(239,232,223,0.9);
     }
     
     .guide_card{
@@ -216,6 +236,8 @@
         height: auto;
         object-fit: cover;
         margin: 30px var(--Distance);
+        background-color:rgba(239,232,223,0.9);
+
     }
     
     .guide_card img{

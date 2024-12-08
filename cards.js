@@ -1,67 +1,67 @@
 // Tilføjet tags for education og machine
 const projectData = [
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
+        image: "/img/project_images/card_sygeplejerske_3dprint.jpg",
+        title: "Skelet dele i 3D",
         subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
+        paragraphs: ["Dele af menneskets skelet printet i 3D"],
         tags: {education:"Sygeplejerske", machine:"3D-print"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "Noget andet",
-        subtitle: "Personligt | Badges",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer"],
-        tags: {education:"Personligt", machine:"Badges"}
+        image: "img/project_images/card_personligt_laserskærer_1.jpg",
+        title: "Julepynt rensdyr i træ",
+        subtitle: "Personligt | Laserskærer",
+        paragraphs: ["Sødt rensdyr laserskåret ud af træ"],
+        tags: {education:"Personligt", machine:"Laserskærer"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "Noget helt andet",
-        subtitle: "Bygningskonstruktør | Laserskærer",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer"],
-        tags: {education:"Bygningskonstuktør", machine:"Laserskærer"}
+        image: "img/project_images/card_jordbrugsteknolog_3dprint.jpg",
+        title: "Potteplante i 3D",
+        subtitle: "Jordbrugsteknolog | 3D-print",
+        paragraphs: ["Sød potteplante printet i 3D"],
+        tags: {education:"Jordbrugsteknolog", machine:"3D-print"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_personligt_3dprint.jpg",
+        title: "Terninger i 3D",
+        subtitle: "Personligt | 3D-print",
+        paragraphs: ["Personligt-gjorte terninger printet i 3D"],
+        tags: {education:"Personligt", machine:"3D-print"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_Fablab_laserskærer_1.jpg",
+        title: "Plexiglas skilt",
+        subtitle: "Fablab | Laserskærer",
+        paragraphs: ["Et skilt i plexiglas for Fablab"],
+        tags: {education:"Fablab", machine:"Laserskærer"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_personligt_laserskærer_2.jpg",
+        title: "Mobilholder i træ",
+        subtitle: "Personligt | Laserskærer",
+        paragraphs: ["En detaljeret træudskæring til mobil"],
+        tags: {education:"Personligt", machine:"Laserskærer"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_itsikkerhed_badge.jpg",
+        title: "Badge for IT-Sikkerhed",
+        subtitle: "IT-sikkerhed | Badges",
+        paragraphs: ["Badge designet af IT-Sikkerhedsstuderende"],
+        tags: {education:"IT-sikkerhed", machine:"Badges"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_personligt_tshirt.jpg",
+        title: "T-shirt med eget print",
+        subtitle: "Personligt | T-shirt",
+        paragraphs: ["En personligt-gjort t-shirt med selv vagt print"],
+        tags: {education:"Personligt", machine:"T-shirt"}
     },
     {
-        image: "img/gronburger skitse.jpg",
-        title: "3D-printet hjerte",
-        subtitle: "Sygeplejerske | 3D-print",
-        paragraphs: ["Et 3D-printet hjerte til forskning i hjerteoperationer", "mere tekst","lidt mere tekst."],
-        tags: {education:"Sygeplejerske", machine:"3D-print"}
+        image: "img/project_images/card_Fablab_laserskærer_2.jpg",
+        title: "Stole og bord i træ",
+        subtitle: "Fablab | Laserskærer",
+        paragraphs: ["Stole og bord skåret ud i træ"],
+        tags: {education:"Fablab", machine:"Laserskærer"}
     },
 ]
 
@@ -160,7 +160,7 @@ function filterCards() {
 });
 }
 
-//Funktion til at generere cards og filtre dem
+//Funktion til at generere cards og filtrere dem
 function generateAndFilterCards() {
     //Rydder alle eksisterende cards
     const projectDiv = document.getElementById("projects");

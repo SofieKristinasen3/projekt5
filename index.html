@@ -14,20 +14,50 @@
         <header>
           <nav id="navigation">
             <div>
-              <img
-                src="img/logo/UCL_horisontal_logo_rbg.png"
-                alt="UCL, Erhvervsakademi og professionshøjskole"
-                class="logo"
-              />
+              <div class="nav_buttons">
+                <img
+                  src="img/logo/UCL_horisontal_logo_rbg.png"
+                  alt="UCL, Erhvervsakademi og professionshøjskole"
+                  class="logo"
+                />
+
+                <div>
+                  <!-- burger icon -->
+                  <div class="menu-btn" onclick="showSidebar()">
+                    <a href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#e56826"
+                      >
+                        <path
+                          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
               <div class="sidebar">
                 <!-- close icon -->
-                <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e56826"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></div>
-            </div>
-            <div>
-                <!-- burger icon -->
-                <div class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e56826"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></div>
-            </div>
-            <div id="burgermenu"></div>
+                <div onclick="hideSidebar()">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e56826"
+                    >
+                      <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                      /></svg
+                  ></a>
+                </div>
+              </div>
+
+              <div id="burgermenu"></div>
             </div>
 
             <h1><i>Fablab</i></h1>
