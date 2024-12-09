@@ -27,10 +27,10 @@ const menuItems = [
   
   
   function addMenuItems(root, data) {
-    let menuItemsList = document.createElement("ul");
+    let menuItemsList = document.createElement("ul"); //opretter liste i root som er angivet til sidebar
     root.appendChild(menuItemsList);
     
-    let listItem = document.createElement("li");
+    let listItem = document.createElement("li"); //opretter  listepunkter 
     listItem.innerHTML = "<a href='"+ data.toUrl +"'>"+ data.listItem + "</a>";
     menuItemsList.appendChild(listItem);
   }
