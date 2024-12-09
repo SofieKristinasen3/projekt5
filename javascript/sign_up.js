@@ -1,3 +1,5 @@
+//Camilla 
+
 let choosecourse = ["Print din egen mini-figur", "Introduktion til 3D print", "Lasercut til brug i undervisningen", "Brug af Design Thinking i dit projekt", "Åbent Lab - Vis din idé og mød andre skabere"];
 
 let modal = document.getElementById("myModal");

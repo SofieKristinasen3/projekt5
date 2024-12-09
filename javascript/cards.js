@@ -1,4 +1,5 @@
-// Tilføjet tags for education og machine
+//Sofie har lavet den del af koden som vedrører dynamisk oprettelse af projectCards. Christine har lavet den del af koden som vedrører sortering af dem. 
+
 const projectData = [
     {
         image: "/img/project_images/card_sygeplejerske_3dprint.jpg",

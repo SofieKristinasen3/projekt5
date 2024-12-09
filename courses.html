@@ -6,7 +6,8 @@
     <title>Kurser</title>
     <link rel="stylesheet" href="https://use.typekit.net/edp2glj.css" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <script src="hamburgermenu.js" defer></script>
+    <script src="javascript/hamburgermenu.js" defer></script>
+    <script src="javascript/sign_up.js" defer></script>
   </head>
   <body id="courses_site">
     <div>
@@ -24,17 +25,8 @@
                 <!-- burger icon -->
                 <div class="menu-btn" onclick="showSidebar()">
                   <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="#e56826"
-                    >
-                      <path
-                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                      /></svg
-                  ></a>
+                    ><img src="img/icons/burgermenu_btn.svg" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
@@ -42,17 +34,8 @@
               <!-- close icon -->
               <div onclick="hideSidebar()">
                 <a href="#"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="#e56826"
-                  >
-                    <path
-                      d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                    /></svg
-                ></a>
+                  ><img src="img/icons/burgermenu_close_btn.svg" alt=""
+                /></a>
               </div>
             </div>
 
@@ -62,30 +45,7 @@
           <h1><i>Fablab</i></h1>
         </nav>
       </header>
-
-      <main>
-        <div class="intro">
-          <h3>Kommende kurser</h3>
-        </div>
-
-        <div id="all_courses">
-          <div class="courses" id="printing">
-            <h4>3D print</h4>
-
-            <div class="course_card">
-              <div>
-                <h5>Print din egen mini-figur</h5>
-                <p><b>11.12.2024</b> - kl. 16:00 - 17:00</p>
-                <p>Fablab lokalet</p>
-              </div>
-              <div>
-                <img
-                  src="img/icons/arrow_right.svg"
-                  alt="tilmeld dig til kursus"
-                />
-              </div>
-            </div>
-
+     
            <!--Tilmeldingsblanket modal popup-->
            <div id="myModal" class="modal">
             <div class="modal-overlay"></div> 
@@ -122,9 +82,33 @@
                   
                 </div>
               </div>
+
+
+      <main>
+        <div class="intro">
+          <h3>Kommende kurser</h3>
+        </div>
+
+        <div id="all_courses">
+          <div class="courses" id="printing">
+            <h4>3D print</h4>
+
+            <div class="course_card">
+              <div>
+                <h5>Print din egen mini-figur</h5>
+                <p><b>11.12.2024</b> - kl. 16:00 - 17:00</p>
+                <p>Fablab lokalet</p>
+              </div>
+              <div>
+                <img
+                  src="img/icons/arrow_right.svg"
+                  alt="tilmeld dig til kursus"
+                  onclick="showModal()"/>
+              </div>
+            </div>
                   <div class="course_card">
                     <div>
-                      <h5>Introduktion til</h5>
+                      <h5>Introduktion til TinkerCAD</h5>
                       <p><b>11.12.2024</b> - kl. 16:00 - 17:00</p>
                       <p>Fablab lokalet</p>
                     </div>
@@ -133,17 +117,7 @@
         
                   </div>
                 </div>
-            <div class="course_card">
-              <div>
-                <h5>Introduktion til</h5>
-                <p><b>11.12.2024</b> - kl. 16:00 - 17:00</p>
-                <p>Fablab lokalet</p>
-              </div>
 
-              <img
-                src="img/icons/arrow_right.svg"
-                alt="tilmeld dig til kursus"
-              />
             </div>
           </div>
           <hr />
@@ -159,7 +133,7 @@
 
               <img
                 src="img/icons/arrow_right.svg"
-                alt="tilmeld dig til kursus"
+                alt="tilmeld dig til kursus" onclick="showModal()"
               />
             </div>
           </div>
@@ -186,7 +160,7 @@
 
               <img
                 src="img/icons/arrow_right.svg"
-                alt="tilmeld dig til kursus"
+                alt="tilmeld dig til kursus" onclick="showModal()"
               />
             </div>
 
@@ -199,7 +173,7 @@
 
               <img
                 src="img/icons/arrow_right.svg"
-                alt="tilmeld dig til kursus"
+                alt="tilmeld dig til kursus" onclick="showModal()"
               />
             </div>
           </div>

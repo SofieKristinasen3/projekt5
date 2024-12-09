@@ -13,27 +13,19 @@
         margin: 0;
         padding: 0;
         font-family: proxima nova, sans-serif;
-        background-image: url(img/backgroud_phone.svg);
+        background-image: url(img/background.svg);
         background-color: var(--AlabasterWhite);
         background-repeat: no-repeat;
         background-size: cover;
     }
     
-
-    #container {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    #content-wrap {
-        padding-bottom: auto;
-      }
     
     h1{
         color: var(--NightBlack);
         font-size: 2rem;
         font-weight: 700;
         padding-left: var(--Distance);
+        background-color:rgba(239,232,223,0.9);
     }
     
     h2{
@@ -104,40 +96,30 @@
     background-color: var(--AlabasterWhite);
     margin: 15% auto;
     padding: 20px;
-    box-shadow: 0px 4px 10px var(--NightBlack);
+    box-shadow: 0px 1px 10px var(--NightBlack);
     width: 300px;
     text-align: left;
-    border-radius: 5%;
+    border-radius: 20px;
     font-weight: bold;
 }
 
-/* HELP ME i dont know how to do this shit 
-#signupForm {
-display: grid;
-grid-auto-rows: min-content;
-gap: 5px;
-} */
-
-/*help me i tried to space it 
-#fname {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;  
+.modal-content h2{
+    margin-left: var(--Distance);
+    margin-bottom: 10px;
 }
-*/
 
-/* my best try */
 #signupForm label {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 /* aside baggrund i modalen fra HTML */
 #modal-courses-background {
     background-color:#DAD3CB;
-    border-radius: 2%;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10%;
+    margin: 0px var(--Distance);
 }
 
 /* Transparent baggrund bag modal */
@@ -158,23 +140,23 @@ gap: 5px;
     font-size: 45px;
     font-weight: lighter;
     color: var(--SpanishOrange);
+    margin-right: var(--Distance);
 
 }
 
-/* skal nok slettes/ændres til overall hover */
 .close:hover,
 .close:focus {
-    color: var(--SpanishOrange);
+    color: var(--NightBlack);
     text-decoration: none;
     cursor: pointer;
-}
+} 
 
 input[type="text"], input[type="email"], select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px var(--NightBlack);
+    box-shadow: 0px 1px 10px var(--NightBlack);
     border-radius: 5px;
     background-color: #f9f8fa;
     outline: none;
@@ -184,11 +166,8 @@ input[type="text"], input[type="email"], select {
 .submit-btn {
     background-color: var(--SpanishOrange);
     cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: var(--SpanishOrange);
-    color: var(--NightBlack);
+    margin-left: var(--Distance);
+    margin-top: 10px;
 }
 
 /* pilen til at åbne modalen */
@@ -210,10 +189,11 @@ input[type="text"], input[type="email"], select {
         display: flex;
         justify-content: space-between;
         padding: var(--Distance);
+        align-items: center;
     }
 
-    nav img{
-    max-width: 30%;
+    .logo{
+    max-width: 40%;
     height: auto;
     }
     
@@ -266,19 +246,6 @@ input[type="text"], input[type="email"], select {
     .sidebar a{
         width: 100%;
     }
-    
-    .menu-btn{
-        display: none;
-    }
-    
-    @media(max-width:768px){
-        .hideOnMobile{
-            display: none;
-        }
-        .menu-btn{
-            display: block;
-        }
-    }
 
     aside{
         width: 90%;
@@ -288,6 +255,7 @@ input[type="text"], input[type="email"], select {
         border-radius: 2%;
     }
     
+
     #sorting_content{
         display: flex;
         flex-direction: column;
@@ -299,7 +267,7 @@ input[type="text"], input[type="email"], select {
         display: block;
         width: auto;
         height: auto;
-        box-shadow: 0px 4px 10px var(--NightBlack);
+        box-shadow: 0px 1px 10px var(--NightBlack);
         padding: var(--Distance);
         border-radius: 10px;
         margin: 30px var(--Distance);
@@ -362,7 +330,7 @@ input[type="text"], input[type="email"], select {
 
     .courses{
         background-color:rgba(239,232,223,0.9);
-        padding: 10px;
+        padding: var(--Distance);
     }
     
     .course_card{
@@ -424,10 +392,11 @@ input[type="text"], input[type="email"], select {
         }
         
         .project_card{
-            width: 25%;
+            width: 30%;
             padding: 10px;
             margin: 0;
         }
+
         .project_card:nth-child(n+4){
             margin-top: var(--Distance);
         }
@@ -437,11 +406,15 @@ input[type="text"], input[type="email"], select {
             flex-wrap: wrap;
             width: 65%;
             position: absolute;
-            right: 0px;
             justify-content: space-between;
             column-gap: 30px;
-            margin-right: var(--Distance);
+            top: 45%;
+            right: var(--Distance);
             
+        }
+
+        .logo{
+            width: 20%;
         }
         
         .vertical {
@@ -450,6 +423,7 @@ input[type="text"], input[type="email"], select {
             height: 250vh;
             position:absolute;
             left: 27.5%;
+            top: 45%;
           }
 
           footer img{
@@ -492,6 +466,10 @@ input[type="text"], input[type="email"], select {
 
         .guide_line{
             display: none;
+        }
+
+        .intro{
+            width: 40%;
         }
 
         #all_courses{

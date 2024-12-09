@@ -1,3 +1,5 @@
+//Thea 
+
 const sidebar = document.querySelector('.sidebar');
 
 function showSidebar(){
