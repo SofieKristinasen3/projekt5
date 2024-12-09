@@ -71,6 +71,7 @@
         <div id="all_courses">
           <div class="courses" id="printing">
             <h4>3D print</h4>
+
             <div class="course_card">
               <div>
                 <h5>Print din egen mini-figur</h5>
@@ -85,6 +86,53 @@
               </div>
             </div>
 
+           <!--Tilmeldingsblanket modal popup-->
+           <div id="myModal" class="modal">
+            <div class="modal-overlay"></div> 
+            <div class="modal-content">
+                <h2>Tilmeld dig kursus:</h2>
+                <aside id="modal-courses-background">
+                <form id="signupForm">
+                    <label for="fname">Fornavn:</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Fornavn"/>
+          
+                    <label for="lname">Efternavn:</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      name="lastname"
+                      placeholder="Efternavn"/>
+          
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail"/>
+          
+                    <label for="choosecourse">Vælg kursus:</label>
+                    <select id="choosecourse" name="choosecourse"></select>
+                </form>
+                </aside>
+                    <button type="button" class="submit-btn" onclick="submitForm()">
+                      Tilmeld
+                    </button>
+                    <!--krydset i tilmeldingsblanket popup-->
+                  <span class="close">&times;</span>
+                  
+                </div>
+              </div>
+                  <div class="course_card">
+                    <div>
+                      <h5>Introduktion til</h5>
+                      <p><b>11.12.2024</b> - kl. 16:00 - 17:00</p>
+                      <p>Fablab lokalet</p>
+                    </div>
+        
+                    <img src="img/icons/arrow_right.svg" alt="tilmeld dig til kursus" onclick="showModal()" />
+        
+                  </div>
+                </div>
             <div class="course_card">
               <div>
                 <h5>Introduktion til</h5>
