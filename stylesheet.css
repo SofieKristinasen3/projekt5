@@ -39,6 +39,7 @@ h1 {
     font-weight: 700;
     padding-left: var(--Distance);
     background-color: rgba(239, 232, 223, 0.9);
+    width: fit-content;
 }
 
 h2 {
@@ -323,6 +324,7 @@ aside {
 
 .intro {
     padding: 0px var(--Distance);
+    background-color: rgba(239, 232, 223, 0.9);
 }
 
 .guide_card {
@@ -393,30 +395,86 @@ footer p {
     font-weight: 600;
 }
 
+
+.vertical {
+    display: none;
+    border-left: 4px dotted var(--SpanishOrange);
+    height: 200%;
+    position: absolute;
+    left: 27.5%;
+    top: 45%;
+    z-index: -1;
+}
+
 .socials {
     display: flex;
     justify-content: space-between;
 }
 
 .socials img {
-    width: 10%;
+    width: 100px;
+    height: auto;
 }
 
-.vertical {
-    display: none;
-}
-
-.footer_computer {
-    display: none;
-}
 
 /* Hjemmesiden gøres responsiv, ift. skærme der er bredere end 768px*/
 @media only screen and (min-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    #index_main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--NightBlack);
+        color: var(--AlabasterWhite);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_logo {
+        width: auto;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_text {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .footer_text_left {
+        padding-right: 30px;
+    }
+
+    .socials {
+        margin: 0;
+    }
+
     aside {
         width: 20%;
         position: relative;
         left: var(--Distance);
         margin: 0;
+        height: fit-content;
     }
 
     .project_card {
@@ -433,12 +491,11 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         width: 65%;
-        position: absolute;
         justify-content: space-between;
         column-gap: 30px;
-        top: 45%;
         right: var(--Distance);
-
+        float: right;
+        margin: 0 var(--Distance) var(--Distance) 0;
     }
 
     .logo {
@@ -448,35 +505,11 @@ footer p {
     .vertical {
         display: block;
         border-left: 4px dotted var(--SpanishOrange);
-        height: 250vh;
+        height: 200%;
         position: absolute;
         left: 27.5%;
         top: 45%;
-    }
-
-    footer img {
-        width: 10%;
-    }
-
-    footer p {
-        padding: 10px;
-    }
-
-    .socials {
-        justify-content: flex-end;
-    }
-
-    .socials img {
-        width: 5%;
-    }
-
-    .footer_text {
-        display: flex;
-
-    }
-
-    footer {
-        display: none;
+        z-index: -1;
     }
 
     #guide {
@@ -497,23 +530,25 @@ footer p {
     }
 
     .intro {
-        width: 40%;
+        width: 50%;
+        height: fit-content;
+    }
+
+
+    #courses_site hr {
+        display: none;
     }
 
     #all_courses {
         width: 100%;
         display: flex;
-        gap: var(--Distance);
         flex-wrap: wrap;
-        margin: 10px 0;
+        justify-content: space-between;
     }
 
     .courses {
-        width: 37%;
-        margin: 30px var(--Distance);
+        width: 45%;
+        margin: 0;
     }
 
-    #all_courses hr {
-        display: none;
-    }
 }
